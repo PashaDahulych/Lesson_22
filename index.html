@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson_22</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+		<main class="page">
+			<div class="page__container">
+				<div class="page__part-one">
+					<p><mark>"use strict"</mark>  - сторогий режим. Щоб він працював, він повинен бути в самому верху js-коду. Перед строгим режимом допускається тільки запис коментарів.  NB! - регіст має значення!</p>
+					<p><mark>console.log( 'Вчимо JS' )</mark>  - віринй запис, але краще поставити крапку з комою після кожної інструкції, це хороший тон і застереже нас від помилок, якщо код буде збиратись і ужиматись зборщиком</p>
+					<p><mark>console.log( 'Вчимо' ) <br> console.log( 'JS' )</mark>  - віринйи запис і помилки не буде, але краще ставити крапку з комою рісля кожної інструкції</p>
+					<p><mark>console.log( 'Вчимо' ) console.log( 'JS' )</mark>  - консоль вибасть помилку, так як інструкції не розділені крапкою з комою</p>
+					<p><mark> console.log( 'Вчимо ) <br> console.log( 'JS' ) </mark>- помилка тому, що не закрити лапки. Все, що відкрито, повинно бути закрито</p>
+				</div>
+				<div class="page__part-two">
+					<p><mark>let user = 'Вася' let age = 18</mark>  - помилка. Потрібно або додати крапку з комою, або перенести на новий рядок let age = 18</p>
+					<p><mark>let myage = 36;</mark> - віринй запис, але краще записати <mark>let myAge</mark></p>
+					<p><mark>const BLOCKSIZE = 14 + 36;</mark> - помилки не буде, але це невідома заздалегідь константа, тому їх прийнято так записувати <mark>blockSize</mark></p>
+					<p><mark>const BLOCKSIZE = 100;</mark> - вірна запис, константа відома і точна заздалегідь</p>
+					<p><mark>if ( true ) { <br>	var size = 15;<br>}<br>console.log( size );</mark> - вірна запис. Зміна оголешена через <mark>var</mark>, тому її буде видно за межами блока <mark>if</mark> </p>
+				</div>
+				<div class="page__part-three">
+					<p><mark>let userAge = 26; <br>
+						let userInfo = "Паша ${userAge}";</mark> - все ок, але якщо хочемо вивести це в консоль, то портрібні зворотні лапки</p>
+					<p><mark>let userHeight = 175 / 0; <br>console.log( Height );</mark> - не вірно. При діленні на 0 отримуємо значення infinity,  тип даних number></p>
+					<p><mark>let useName;<br>console.log( typeof userName );</mark> - не вірно. Змінна оголошена, але значення не задане</p>
+					<p> <mark>let userSize = "45" / "5";<br>console.log( typeof userSize );</mark> - вірно </p>
+				</div>	
+			</div>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+	<script src="js/screipt.js"></script>
+</body>
+</html>
